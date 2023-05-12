@@ -10,7 +10,6 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none; border: none;
-
     transition: all .2s linear;
 
 }
@@ -325,7 +324,10 @@ header .navbar ul li a:hover{
     padding: 4rem;
     padding-bottom: 0;
 }
-
+.contact .row .content a {
+    text-decoration: none;
+    color: white;
+}
 .contact .row form{
     flex: 1 1 45rem;
     padding: 2rem;
