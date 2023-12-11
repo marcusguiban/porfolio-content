@@ -295,7 +295,7 @@ header .navbar ul li a:hover{
 
 .portfolio .box-container .box{
     height: 20rem;
-    width: 26rem;
+    width: 30rem;
     border-radius: 1rem;
     margin: 2rem;
     overflow: hidden;
@@ -378,18 +378,18 @@ header .navbar ul li a:hover{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.confirmation-message {
+    color: green; /* Change to the color you prefer */
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    
+  }
+  .project-description {
+    color: white;
+    padding-top: 10px;
+  }
 
 
 
