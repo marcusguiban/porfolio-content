@@ -135,7 +135,57 @@ header .navbar ul li a {
 header .navbar ul li a:hover {
   background: var(--blue);
 }
+/* Footer styling */
+footer {
+  background: #111;
+  color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+}
 
+footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .title {
+  font-size: 2rem;
+  color: var(--blue);
+  margin-bottom: 1.5rem;
+}
+
+/* horizontal row for contact info */
+footer .footer-row {
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  justify-content: center;
+  gap: 2rem; /* spacing between items */
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+footer .footer-item {
+  font-size: 1.6rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer .footer-item a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer .footer-item a:hover {
+  color: var(--blue);
+}
+
+footer .footer-copy {
+  font-size: 1.4rem;
+  color: #aaa;
+}
 #menu {
   position: fixed;
   top: 2rem;
@@ -202,28 +252,24 @@ header .navbar ul li a:hover {
 }
 
 .about .row .counter {
-  flex: 1 1 48rem;
-  display: block;
-  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;   
+  gap: 2rem;              
 }
-
 
 .about .row .counter .box {
-  width: 100%;
-  background: none;
-  text-align: left;
-  padding: 0;
-  margin: 0 0 2rem 0;
+  width: 100%;              
+  margin: 0;             
+  padding-left: 2rem;     
 }
 
-/* section titles */
 .about .row .counter .box h3 {
   font-size: 2.2rem;
   color: var(--blue);
   margin-bottom: 1rem;
 }
 
-/* list styling */
 .about .row .counter ul {
   list-style: disc;
   padding-left: 2rem;
@@ -235,11 +281,40 @@ header .navbar ul li a:hover {
   margin-bottom: 0.8rem;
 }
 
-/* remove span (since no counters now) */
 .about .row .counter .box span {
   display: none;
 }
+/* Skills section */
+.about .row .skills {
+  flex: 1 1 48rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
 
+.about .row .skills .box {
+  width: 100%;
+  text-align: left;
+  padding-left: 5rem;
+}
+
+.about .row .skills .box h3 {
+  font-size: 2.2rem;
+  color: var(--blue);
+  margin-bottom: 1rem;
+}
+
+.about .row .skills ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+
+.about .row .skills ul li {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
 .education .box-container {
   display: flex;
   align-items: center;
@@ -317,69 +392,6 @@ header .navbar ul li a:hover {
   transform: scale(1.2);
 }
 
-.contact .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.contact .row .content {
-  flex: 1 1 30rem;
-  padding: 4rem;
-  padding-bottom: 0;
-}
-.contact .row .content a {
-  text-decoration: none;
-  color: white;
-}
-.contact .row form {
-  flex: 1 1 45rem;
-  padding: 2rem;
-  margin: 2rem;
-  margin-bottom: 4rem;
-}
-
-.contact .row form .box {
-  padding: 1rem;
-  margin: 1rem 0;
-  background: #3333;
-  color: #fff;
-  text-transform: none;
-  font-size: 1.7rem;
-  width: 100%;
-}
-
-.contact .row form .box::placeholder {
-  text-transform: capitalize;
-}
-
-.contact .row form .message {
-  height: 15rem;
-  resize: none;
-}
-
-.contact .row .content .title {
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 3rem;
-  padding-bottom: 2rem;
-}
-
-.contact .row .content .info h3 {
-  color: #eee;
-  font-weight: normal;
-  display: flex;
-  align-items: center;
-  font-size: 2rem;
-  padding: 1rem 0;
-}
-
-.contact .row .content .info h3 i {
-  padding-right: 1rem;
-  color: var(--blue);
-}
-
 .confirmation-message {
   color: green; /* Change to the color you prefer */
   font-weight: bold;
@@ -437,8 +449,5 @@ header .navbar ul li a:hover {
   }
   .portfolio .box-container .box {
     width: 100%;
-  }
-  .contact .row form {
-    margin: 3rem 0;
   }
 }
